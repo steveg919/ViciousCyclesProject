@@ -1,0 +1,291 @@
+/* Steve Girlock - June 2020 */
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #d8d7d8;
+    background-image: linear-gradient(#150025, #310156);
+}
+header {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+    font-style: italic;
+    color: lightgray;
+    margin-left: 0.5em;
+}
+hr {
+    border-top: 1px solid #df8711;
+    border-bottom: black;
+}
+#container{
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile{
+    display: inline;
+    text-align: center;
+}
+
+ul {
+    font-style: none;
+}
+#logo {
+    align-content: center;
+    margin-top: 0.5em;
+    margin-left: 0;
+    max-width: 100%;
+}
+footer {
+    background-color: #150025;
+    color: #ffffff;
+    width: 100%;
+    min-height: 120px;
+    text-align: center;  
+    align-content: center;
+    text-size-adjust: 0.9em;
+    
+}
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+a:active {
+    color: #df8711;
+}
+section {
+    width: 70%;
+    margin: auto;
+    clear: none;    
+}
+article {
+    clear: none;
+    
+}
+aside h3 {
+    font-size: 1.05em;
+    color: #df8711;
+}
+h1 {
+    font-size: 1.5em;
+    color: #df8711;
+}
+h2 {
+    font-size: 1.25em;
+    color: #df8711;
+}
+nav li{
+    background-color: #df8711;
+    border-radius: .5em;
+    list-style-type: none;
+    margin: 0.3em;
+    padding: 0.4em;
+}
+
+nav li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*
+.leftnav{
+    float: left;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 14%;
+    font-size: 1.2em;
+    line-height: 2.25em;
+    list-style-image: url('images/skullbullet.png');
+ }
+ */
+
+/* Nav */
+nav{
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Nav list */
+nav ul{
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Nav list items */
+nav li{
+    border-radius: 0.5em;
+    list-style-type: none;
+    margin: 0.3em;
+    padding: 0.4em;
+}
+
+/* Nav links */
+nav li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+#orangebike {
+    max-width: 225px;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    border-radius: 5%;
+    box-shadow: #000000 4px 4px;
+    border: 1px solid #df8711;
+}
+#myimage2 {
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    opacity: 95%;
+    border-radius: 5%;
+    box-shadow: #000000 4px 4px;
+}
+#skull1 {
+    display: none;
+}
+#skull2 {
+    display: none;
+}
+#facebook {
+    height: 30px;
+    vertical-align: bottom;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#twitter {
+    height: 30px;
+    vertical-align: bottom;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#bottom {
+    vertical-align: middle;
+    margin-top: 1.35em;
+}
+#smllphts {
+    display: none;
+   
+}
+
+.mainp {
+    margin-left: 1em;
+}
+.callout {
+    
+    border: 1px solid #df8711;
+    max-width: 70%;
+    border-radius: 15px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+.desktop {
+    display: none;
+}
+#featuredbikes {
+    display: none;
+}
+
+
+/* ---------------------------------------------- */
+/* Media query for tablets with min size of 660px */
+@media only screen and (min-width: 660px) {
+
+nav li{
+    display: inline;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 0;
+    padding-right: 0;
+    
+    white-space: nowrap;
+    border-radius: 0;
+    background-color: transparent;
+}
+nav li a:hover {
+    color: #9d9d93;
+    
+}
+a:hover { 
+    color: #df8711;
+  }
+/* Style to hide mobile */
+.mobile{
+    display: none;
+}
+/* Style for height and opacity of images in figure element */
+figure img{
+    height: 10em;
+    opacity: 0.7;
+    border: 1px solid #df8711;
+}
+aside img {
+    opacity: 0.7;
+}
+
+aside img:hover{
+    opacity: 1;
+}
+
+/* Style removes transparency on hover */
+figure img:hover{
+    opacity: 1;
+}
+.desktop {
+    display: block;
+}
+#featuredbikes {
+    display: block;
+}
+.smallphotos {
+    border-radius: 5%;
+    box-shadow: #000000 3px 3px;
+    margin-left: 3em;
+    width: 25%;
+    height: auto;
+    
+}
+#smllphts {
+    align-content: center;
+    display: inline;
+}
+
+#featuredbikes {
+    float: right;
+    display: block;
+    align-content: center;
+    margin-left: 2em;
+}
+#skull1 {
+    display: block;
+    float: left;
+    max-height: 75px;
+}
+#skull2 {
+    display: block;
+    float: right;
+    max-height: 75px;
+}
+#bottom {
+    max-width: 70%;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
